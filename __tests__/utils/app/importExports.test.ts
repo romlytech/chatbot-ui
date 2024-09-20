@@ -99,13 +99,13 @@ describe('cleanData Functions', () => {
                 content: 'Hi',
               },
             ],
-            model: OpenAIModels[OpenAIModelID.GPT_3_5],
+            model: OpenAIModels[OpenAIModelID.GPT_4o_mini],
             prompt: DEFAULT_SYSTEM_PROMPT,
             folderId: null,
           },
         ],
         folders: [],
-        prompts:[]
+        prompts: [],
       });
     });
   });
@@ -154,7 +154,7 @@ describe('cleanData Functions', () => {
                 content: 'Hi',
               },
             ],
-            model: OpenAIModels[OpenAIModelID.GPT_3_5],
+            model: OpenAIModels[OpenAIModelID.GPT_4o_mini],
             prompt: DEFAULT_SYSTEM_PROMPT,
             folderId: null,
           },
@@ -189,7 +189,7 @@ describe('cleanData Functions', () => {
                 content: 'Hi',
               },
             ],
-            model: OpenAIModels[OpenAIModelID.GPT_3_5],
+            model: OpenAIModels[OpenAIModelID.GPT_4o_mini],
             prompt: DEFAULT_SYSTEM_PROMPT,
             folderId: null,
           },
@@ -207,12 +207,12 @@ describe('cleanData Functions', () => {
             name: 'prompt 1',
             description: '',
             content: '',
-            model: OpenAIModels[OpenAIModelID.GPT_3_5],
+            model: OpenAIModels[OpenAIModelID.GPT_4o_mini],
             folderId: null,
           },
         ],
       } as ExportFormatV4;
-      
+
       const obj = cleanData(data);
       expect(isLatestExportFormat(obj)).toBe(true);
       expect(obj).toEqual({
@@ -231,7 +231,7 @@ describe('cleanData Functions', () => {
                 content: 'Hi',
               },
             ],
-            model: OpenAIModels[OpenAIModelID.GPT_3_5],
+            model: OpenAIModels[OpenAIModelID.GPT_4o_mini],
             prompt: DEFAULT_SYSTEM_PROMPT,
             folderId: null,
           },
@@ -249,13 +249,11 @@ describe('cleanData Functions', () => {
             name: 'prompt 1',
             description: '',
             content: '',
-            model: OpenAIModels[OpenAIModelID.GPT_3_5],
+            model: OpenAIModels[OpenAIModelID.GPT_4o_mini],
             folderId: null,
           },
         ],
-
       });
     });
   });
-  
 });
